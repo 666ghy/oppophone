@@ -1,0 +1,199 @@
+@import "reset";
+// 弹性盒：
+@mixin flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header{
+    section{
+        position: fixed;;
+        z-index: 2;
+        left:50%;
+        margin-left: -600px;
+       /*  margin:0 auto; */
+        width:1200px;
+        height:60px;
+      
+        @include flex;
+        a{
+            height:60px;
+            display:flex;
+            align-items: center;
+            &.active{
+                color:gainsboro;
+            }
+        }
+    }
+    nav{
+        position: fixed;
+        top:0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        width:1440px;
+        height:250px;
+        background-color:white;
+        display:none; 
+        div{
+            float:left;
+            width:100px;
+            height:100px;
+            
+            margin:100px 30px 50px 30px;
+            display: flex;
+            flex-flow: column; 
+            justify-content: center;
+            align-items: center;
+           img{
+                display: block;
+                width:80px;
+                height:70px;
+                
+           }
+           p{
+               margin-top:10px;
+               font-size: 16px;
+           }
+
+        }
+    }
+    article{
+        width:1440px;
+        height:600px;
+        position: relative;
+        ul{
+            width:10080px;
+            height:600px;
+            position: absolute;
+         
+                img{
+                    float:left;
+                    width:1440px;
+                    height:100%;       
+                }
+           
+        } 
+        figure{
+            width:10080px;
+            height:600px;
+            display:none;
+            
+            position:absolute;
+           
+            div{
+                float:left;
+                margin-left:630px;
+                width:810px;
+                height:600px;
+                @include flex;
+                flex-flow: column;
+                justify-content: center;
+                
+                
+                h1{
+                    font-size: 40px;
+                    font-weight: 900;
+                    margin-bottom: 50px;
+                }
+               h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+               }
+                button{
+                    background-color: yellowgreen;
+                    width:200px;
+                    height:50px;
+                    border:none;
+                    border-radius: 50px;
+                    color:white;
+                }
+            }
+        }
+        ol{
+            width:1263px;
+            height:30px;
+          
+            position: fixed;
+            bottom:50px;
+            left:0;   
+            @include flex;
+            justify-content: center;
+        
+                li{
+                width:15px;
+                height:15px;
+                background:gray;
+                margin:10px;
+                border-radius: 50%;
+               
+                    &.active{
+                        background:yellowgreen;
+                    }
+                }
+               
+            
+        }
+    }
+}
+
+// 大图来袭：
+main{
+    width:900px;
+    height:3990px;
+    margin:50px auto;
+
+    .main1{
+        .box1{
+            width:900px;
+            height:520px;
+            margin:25px 0 25px 0;
+            float:left;
+
+            .left1{
+                width:450px;
+                height:520px;
+                @include flex;
+                flex-flow: column;
+                justify-content: center;
+                h3{
+                   
+                    margin-top:50px;
+                }
+                h1{
+                    margin-top:10px;
+                }
+                .minbox{
+                    margin-top:20px;
+                }
+                h3{
+                    margin-top:30px;
+                }
+                button{
+                    background-color: yellowgreen;
+                    width:200px;
+                    height:50px;
+                    border:none;
+                    border-radius: 50px;
+                    color:white;
+                }
+            }
+            .right1{
+                width:450px;
+                height:520px;
+                img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+    .main2{
+        width:900px;
+        height:520px;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9871792",
+      "name": "oppo",
+      "font_class": "oppo",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "12467701",
+      "name": "商店",
+      "font_class": "shangdian",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header {
+  width: 1440px;
+  height: 58px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+section {
+  width: 1266px;
+  height: 1500px;
+  margin: 0 auto;
+  position: relative; }
+  section #left1 {
+    width: 816px;
+    height: 1500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto; }
+    section #left1 .bigImg {
+      width: 450px;
+      height: 400px;
+      position: relative;
+      margin-bottom: 150px;
+      position: relative; }
+      section #left1 .bigImg #mark {
+        width: 100px;
+        height: 100px;
+        opacity: 0.3;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        display: none; }
+      section #left1 .bigImg img {
+        display: block;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        display: none; }
+      section #left1 .bigImg #bigbox {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: -260px;
+        top: 120px;
+        display: none;
+        overflow: hidden; }
+        section #left1 .bigImg #bigbox img {
+          display: block;
+          width: 1000px;
+          height: 1000px;
+          position: absolute; }
+  section #right1 {
+    width: 450px;
+    height: 1500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 80px 40px 0 40px; }
+    section #right1 .one {
+      padding-bottom: 30px;
+      border-bottom: 1px gray solid; }
+      section #right1 .one h2 {
+        width: 492px;
+        height: 39px;
+        font-size: 23px;
+        margin: 10px; }
+      section #right1 .one #p1 {
+        color: darkorange; }
+      section #right1 .one #a1 {
+        color: darkorange;
+        display: block; }
+      section #right1 .one h1 {
+        margin-top: 30px;
+        font-size: 28px;
+        display: inline-block;
+        margin-bottom: 30px; }
+      section #right1 .one h3 {
+        display: inline-block;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        color: gray;
+        text-decoration: line-through; }
+    section #right1 .two h3 {
+      margin: 20px; }
+    section #right1 .two article a {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      border: gray 1px solid;
+      border-radius: 3px;
+      line-height: 40px;
+      text-align: center;
+      margin: 5px; }
+    section #right1 .three h3 {
+      margin: 20px; }
+    section #right1 .three article a {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      border: gray 1px solid;
+      border-radius: 3px;
+      line-height: 40px;
+      text-align: center;
+      margin: 5px; }
+    section #right1 .four h3 {
+      margin: 20px; }
+    section #right1 .four article a {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      border: gray 1px solid;
+      border-radius: 3px;
+      line-height: 40px;
+      text-align: center;
+      margin: 5px; }
+    section #right1 .five {
+      background-color: whitesmoke;
+      border-radius: 5px;
+      padding: 10px; }
+      section #right1 .five h3 {
+        margin: 20px; }
+      section #right1 .five img {
+        display: block;
+        width: 42px;
+        height: 42px; }
+      section #right1 .five p {
+        display: block;
+        height: 14px; }
+    section #right1 .six {
+      padding-bottom: 30px;
+      border-bottom: 1px solid gray; }
+      section #right1 .six h3 {
+        margin: 20px; }
+      section #right1 .six article {
+        width: 160px;
+        height: 40px;
+        border: 1px solid 1px; }
+        section #right1 .six article p {
+          display: inline-block;
+          width: 50px;
+          height: 40px;
+          margin: none;
+          line-height: 40px;
+          text-align: center;
+          margin: none;
+          padding: none; }
+        section #right1 .six article a {
+          display: inline-block;
+          width: 50px;
+          height: 40px;
+          margin: none;
+          padding: none;
+          border-radius: 3px;
+          line-height: 40px;
+          text-align: center; }
+    section #right1 .seven a {
+      margin-top: 30px;
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      margin-right: 10px;
+      border: 1px solid gray;
+      border-radius: 3px;
+      line-height: 40px;
+      text-align: center; }
+      section #right1 .seven a:nth-last-child(1) {
+        background-color: yellowgreen;
+        color: white; }

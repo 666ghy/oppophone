@@ -1,0 +1,30 @@
+[
+    [
+        {
+            "id":0,
+            "name":"Reno3 Pro 8G+128G 日出印象",
+            "discribe1":"【直降300元 | 到手3699 | 赠蓝牙音箱 | 加价购IoT产品最高立减200元】",
+            "discribe2":"高通骁龙765G，视频超级双防抖，厚度7.7mm，90Hz高感曲面屏。",
+            "discribe3":"以旧换新至高补贴300元，立即前往 >>>",
+            "price":"￥3699.00 ",
+            "oldprice":"￥3999",
+            "zengpin":"https://dsfs.oppo.com/archives/202003/202003060203325e61ea84a14db.png?x-oss-process=image/format,webp"
+
+        }
+        
+
+    ],[
+        {
+            
+            "bigImg1":"https://dsfs.oppo.com/archives/202006/202006030206245ed73e94702ec.png?x-oss-process=image/format,webp",
+            "bigImg2":"https://dsfs.oppo.com/archives/202006/202006030206555ed73dc37cb8b.png?x-oss-process=image/format,webp",
+            "bigImg3":"https://dsfs.oppo.com/archives/202006/202006030206025ed73dcae0b9d.png?x-oss-process=image/format,webp",
+            "bigImg4":"https://dsfs.oppo.com/archives/202006/202006030206055ed73dcdee732.png?x-oss-process=image/format,webp",
+            "mini1":"https://dsfs.oppo.com/archives/202006/_thumbnail/thumbnail_202006030206245ed73e94702ec.png?x-oss-process=image/format,webp",
+            "mini2":"https://dsfs.oppo.com/archives/202006/_thumbnail/thumbnail_202006030206555ed73dc37cb8b.png?x-oss-process=image/format,webp",
+            "mini3":"https://dsfs.oppo.com/archives/202006/_thumbnail/thumbnail_202006030206025ed73dcae0b9d.png?x-oss-process=image/format,webp",
+            "mini4":"https://dsfs.oppo.com/archives/202006/_thumbnail/thumbnail_202006030206055ed73dcdee732.png?x-oss-process=image/format,webp"
+        }
+    ]
+
+]

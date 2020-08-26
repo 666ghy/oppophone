@@ -6,10 +6,13 @@
     align-items: center;
 }
 
-
+body{
+    background-color: gainsboro;
+}
 header{
+    position:relative;
     section{
-        position: fixed;;
+        position: absolute;
         z-index: 2;
         left:50%;
         margin-left: -600px;
@@ -24,6 +27,29 @@ header{
             align-items: center;
             &.active{
                 color:gainsboro;
+            }
+            &:nth-last-child(1){
+                position: relative;
+                #box1{
+                    border:1px gainsboro solid;
+                    border-radius: 5px;
+                    position: absolute;
+                    right:10px;
+                    top:70px;
+                    width:150px;
+                    height:180px;
+                    background-color:white;
+
+                    display: none;
+                    a{
+                        display: block;
+                        line-height: 70px;
+                        text-align: center;
+                        border-bottom: 1px solid gray;
+                        width:150px;
+                        height:60px;
+                    }
+                }
             }
         }
     }
@@ -103,21 +129,24 @@ header{
                     font-weight: 600;
                     margin-bottom: 50px;
                }
-                button{
-                    background-color: yellowgreen;
-                    width:200px;
-                    height:50px;
-                    border:none;
-                    border-radius: 50px;
-                    color:white;
-                }
+               a{
+                display:block;
+                background-color: yellowgreen;
+                width:200px;
+                height:50px;
+                line-height:50px ;
+                text-align: center; 
+                border:none;
+                border-radius: 50px;
+                color:white;
+            }
             }
         }
         ol{
             width:1263px;
             height:30px;
           
-            position: fixed;
+            position: absolute;
             bottom:50px;
             left:0;   
             @include flex;
@@ -146,54 +175,244 @@ main{
     height:3990px;
     margin:50px auto;
 
-    .main1{
+    #main1{
+        width:900px;
+        height:1710px;
         .box1{
+            
+
             width:900px;
             height:520px;
-            margin:25px 0 25px 0;
+            margin:25px 0 25px 0; 
             float:left;
-
+            position: relative;
+            img{
+                width:900px;
+                height:520px;
+            }
             .left1{
+                position:absolute;
+                z-index: 2;
+                right:0;
+                top:0;
                 width:450px;
                 height:520px;
                 @include flex;
                 flex-flow: column;
                 justify-content: center;
+                   
                 h3{
                    
                     margin-top:50px;
+                    font-size: 20px;
                 }
                 h1{
                     margin-top:10px;
+                    font-size: 35px;
+                    font-weight: 800;
                 }
                 .minbox{
                     margin-top:20px;
                 }
                 h3{
                     margin-top:30px;
+                    margin-bottom:30px;
                 }
-                button{
+                a{
+                    display:block;
                     background-color: yellowgreen;
                     width:200px;
                     height:50px;
+                    line-height:50px ;
+                    text-align: center; 
                     border:none;
                     border-radius: 50px;
                     color:white;
                 }
-            }
-            .right1{
-                width:450px;
+            } 
+            
+        }
+    }
+    #main2{
+        width:900px;
+        height:2280px;
+        .box2{
+            width:900px;
+            height:520px;
+            margin:25px 0 25px 0; 
+            float:left;
+            position: relative;
+           
+            .left2{
+                width:437px;
                 height:520px;
+                background-color: white;
+                position:absolute;
+                left:0;
+                top:0;
+                margin-right:13px;
+                @include flex;
+                flex-flow: column;
+                justify-content: center;
                 img{
                     display:block;
-                    width:100%;
-                    height:100%;
+                    width:403.06px;
+                    height:280px;
+                }
+                h3{
+                   
+                    margin-top:30px;
+                    font-size: 30px;
+                }
+                h1{
+                    margin-top:10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .minbox{
+                    margin-top:10px;
+                }
+                h2{
+                    font-size: 30px;
+                  
+                    margin-top:20px;
+                    margin-bottom:30px;
+                }
+            }
+            .right2{
+                width:437px;
+                height:520px;
+                background-color: white;
+                margin-left:13px;
+                position:absolute;
+                right:0;
+                top:0;
+                margin-right:13px;
+                @include flex;
+                flex-flow: column;
+                justify-content: center;
+                img{
+                    display:block;
+                    width:403.06px;
+                    height:280px;
+                }
+                h3{
+                   
+                    margin-top:30px;
+                    font-size: 30px;
+                }
+                h1{
+                    margin-top:10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .minbox{
+                    margin-top:10px;
+                }
+                h2{
+                    font-size: 30px;
+                  
+                    margin-top:20px;
+                    margin-bottom:30px;
                 }
             }
         }
     }
-    .main2{
+}
+
+//类似于左选项栏：
+footer{
+    width:900px;
+    margin:10px auto;
+    color:darkslategray;
+    #footer{
         width:900px;
-        height:520px;
+        height:34px;
+        font-size:15px;
+        @include flex;
+        justify-content: space-between;
+        h1{
+            margin-right:25px;
+            font-size:20px;
+            font-weight: 800px;
+            float:left;
+
+        } 
+        a{ 
+            margin:0 10px 0 10px;
+            color:darkslategray;
+           padding:10px;
+           
+            &.active{
+               
+               display:block;
+                padding:10px;
+               background-color: white;
+               border-radius: 15px;
+               color:green;
+
+            }
+        }
+        
+
+        
+    }
+    article{
+        width:900px;
+        margin-top:30px;
+        display:none;
+        .footerFirst{
+            float:left;
+            background-color: white;
+           
+            width:440px;
+            height:400px;
+            position:relative;
+            color:darkslategray;
+          
+            margin-bottom: 15px;
+            img{
+                display:block;
+               
+                width:440px;
+               
+            }
+            h1{
+                font-size:25px;
+                position:absolute;
+                left:20px;
+                top:180px;
+               
+
+            }
+            h3{
+                font-size:25px;
+                position:absolute;
+                left:45px;
+                top:220px;
+            }
+        }
+        .footers{
+            float:left;
+            background-color: white;
+            width:210px;
+            height:400px;
+            @include flex;
+            flex-flow: column;
+            justify-content: center;
+            color:darkslategray;
+            margin-bottom: 15px;
+            margin-left:10px;
+
+            img{
+                display:block;
+                width:210px;
+               
+            }
+            h3{
+                font-size:16px;
+               
+            }
+        }
     }
 }

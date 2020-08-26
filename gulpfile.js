@@ -17,6 +17,7 @@ gulp.task("images",function(){
     .pipe(connect.reload());
 });
 
+
 gulp.task("script",function(){
     return gulp.src(["*.js","!gulpfile.js"])
     .pipe(gulp.dest("dist/js"))
@@ -45,7 +46,33 @@ gulp.task("scss",function(){
  .pipe(gulp.dest("dist/css"))
  .pipe(connect.reload());
 })
-
+gulp.task("scss1",function(){
+    return gulp.src("openbig.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifycss())
+    .pipe(rename("openbig.mini.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss2",function(){
+    return gulp.src("signIn.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifycss())
+    .pipe(rename("signIn.mini.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss3",function(){
+    return gulp.src("register.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifycss())
+    .pipe(rename("register.mini.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 // 监听：
 gulp.task("watch",function(){
     gulp.watch("*.html",["copy-html"]);
@@ -53,6 +80,11 @@ gulp.task("watch",function(){
     gulp.watch(["*.js","!gulpfile.js"],["script"]);
     gulp.watch(["*.json","!package.json"],["data"]);
     gulp.watch("index.scss",["scss"]);
+    gulp.watch("openbig.scss",["scss1"]);
+    gulp.watch("signIn.scss",["scss2"]);
+    gulp.watch("register.scss",["scss3"]);
+
+
 
 });
 

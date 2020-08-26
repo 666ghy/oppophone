@@ -27,7 +27,9 @@ require(["banner","signIn"],function(banner,signIn){
     var oA=document.querySelectorAll("section a");
     var oMa1=document.getElementById("main1");
     var oMa2=document.getElementById("main2");
+    var oAa=document.querySelectorAll("#footer a");
+    var Foo=document.querySelectorAll("footer article")
     //轮播图：
-    banner.banner(oUl,oOl,Fig,oNav,oA,oMa1,oMa2);
+    banner.banner(oUl,oOl,Fig,oNav,oA,oMa1,oMa2,oAa,Foo);
     signIn.signIn();
 })

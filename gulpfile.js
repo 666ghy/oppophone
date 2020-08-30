@@ -73,6 +73,15 @@ gulp.task("scss3",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+gulp.task("scss4",function(){
+    return gulp.src("shopping.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifycss())
+    .pipe(rename("shopping.mini.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 // 监听：
 gulp.task("watch",function(){
     gulp.watch("*.html",["copy-html"]);
@@ -83,9 +92,7 @@ gulp.task("watch",function(){
     gulp.watch("openbig.scss",["scss1"]);
     gulp.watch("signIn.scss",["scss2"]);
     gulp.watch("register.scss",["scss3"]);
-
-
-
+    gulp.watch("shopping.scss",["scss4"]);
 });
 
 const connect =require("gulp-connect");

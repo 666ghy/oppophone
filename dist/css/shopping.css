@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  background-color: lavender;
+  position: relative; }
+
+#slideshopping {
+  width: 190px;
+  height: 620px;
+  position: fixed;
+  right: -190px;
+  top: 20px;
+  background-color: palegoldenrod;
+  border-radius: 5px; }
+  #slideshopping .box1 {
+    width: 70px;
+    height: 80px;
+    background-color: whitesmoke;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative; }
+    #slideshopping .box1 img {
+      display: block;
+      width: 70px;
+      height: 50px; }
+    #slideshopping .box1 #dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 15px;
+      text-align: center; }
+    #slideshopping .box1 .box2 {
+      margin-top: 5px;
+      width: 70px;
+      height: 20px;
+      border-top: 1px solid gray; }
+      #slideshopping .box1 .box2 a {
+        margin-left: 8px;
+        float: left;
+        font-size: 20px; }
+      #slideshopping .box1 .box2 p {
+        margin-left: 8px;
+        float: left;
+        height: 20px;
+        line-height: 20px; }
+  #slideshopping #shopping {
+    position: absolute;
+    left: -60px;
+    top: 300px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    background-color: plum;
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 40px; }
+
+footer {
+  width: 900px;
+  margin: 10px auto;
+  color: darkslategray; }
+  footer #footer {
+    width: 900px;
+    height: 34px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
+    footer #footer h1 {
+      margin-right: 25px;
+      font-size: 20px;
+      font-weight: 800px;
+      float: left; }
+    footer #footer a {
+      margin: 0 10px 0 10px;
+      color: darkslategray;
+      padding: 10px; }
+      footer #footer a.active {
+        display: block;
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+        color: green; }
+  footer article {
+    width: 900px;
+    margin-top: 30px; }
+    footer article .footerFirst {
+      float: left;
+      background-color: white;
+      width: 440px;
+      height: 400px;
+      position: relative;
+      color: darkslategray;
+      margin-bottom: 15px; }
+      footer article .footerFirst img {
+        display: block;
+        width: 440px; }
+      footer article .footerFirst h1 {
+        font-size: 25px;
+        position: absolute;
+        left: 20px;
+        top: 180px; }
+      footer article .footerFirst h3 {
+        font-size: 25px;
+        position: absolute;
+        left: 45px;
+        top: 220px; }
+      footer article .footerFirst .aa {
+        margin-left: 200px;
+        margin-top: 20px;
+        display: block;
+        background-color: yellowgreen;
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        color: white; }
+    footer article .footers {
+      float: left;
+      background-color: white;
+      width: 210px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      justify-content: center;
+      color: darkslategray;
+      margin-bottom: 15px;
+      margin-left: 10px; }
+      footer article .footers img {
+        display: block;
+        width: 210px; }
+      footer article .footers h3 {
+        font-size: 16px; }
+      footer article .footers .aa {
+        margin-top: 20px;
+        display: block;
+        background-color: yellowgreen;
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        color: white; }

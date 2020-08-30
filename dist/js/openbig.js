@@ -6,14 +6,9 @@ function big(node1,node2){
         type:"get",
         url:"data/openbig.json",
         success:function(arr){
-
-
-
-            
             var arr2=arr[0];
-            
-           var str2=``;
-             str2+=`<div class="one">
+            var str2=``;
+            str2+=`<div class="one">
                 <h2>${arr2[0].name}</h2>
                 <p id="p1">${arr2[0].discribe1}</p>
                 <h4>${arr2[0].discribe2}</h4>
@@ -79,42 +74,37 @@ function big(node1,node2){
             
             var arr1=arr[1];
             var str1=``;
-            
-                str1+=` <div class="bigImg">
+                    str1+=`<div id="bigImg">
                                 <div id="mark"> </div>
                                 <img src="${arr1[0].bigImg1}" alt="">
                                 <img src="${arr1[0].bigImg2}" alt="">
                                 <img src="${arr1[0].bigImg3}" alt="">
                                 <img src="${arr1[0].bigImg4}" alt="">
-                            <div id="bigbox"> 
-                                <img src="${arr1[0].bigImg1}" alt="">
-                                <img src="${arr1[0].bigImg2}" alt="">
-                                <img src="${arr1[0].bigImg3}" alt="">
-                                <img src="${arr1[0].bigImg4}" alt="">
-                            
                             </div>
-                        </div>
+                                <div id="bigbox"> 
+                                    <img src="${arr1[0].bigImg1}" alt="">
+                                    <img src="${arr1[0].bigImg2}" alt="">
+                                    <img src="${arr1[0].bigImg3}" alt="">
+                                    <img src="${arr1[0].bigImg4}" alt="">
+                                </div>
+                        
                         <div class="miniImg">
                             <img src="${arr1[0].mini1}" alt="">
                             <img src="${arr1[0].mini2}" alt="">
                             <img src="${arr1[0].mini3}" alt="">
                             <img src="${arr1[0].mini4}" alt="">
                         </div>`;
-            
             $(node1).html(str1); 
-
             // 图片选项卡+放大镜：
-            var bigImgs=document.querySelectorAll(".bigImg img");
+            var bigImgs=document.querySelectorAll("#bigImg img");
             var miniImgs=document.querySelectorAll(".miniImg img");
             var bigbox=document.getElementById("bigbox");
-
             var bigboxs=document.querySelectorAll("#bigbox img");
             var mark=document.getElementById("mark");
-
+            //划入小图片：
             $(bigImgs[0]).css("display","block");
             for(var i=0;i<miniImgs.length;i++){
                 miniImgs[i].index=i;
-               
                 $(miniImgs[i]).hover(function(){
                     for(var j=0;j<miniImgs.length;j++){
                         $(miniImgs[j]).css("opacity","0.5");
@@ -123,33 +113,25 @@ function big(node1,node2){
                     }
                     $(miniImgs[this.index]).css("opacity","1");
                     $(bigImgs[this.index]).css("display","block");
-                    $(bigboxs[this.index]).css("display","block");
-
-
+                    $(bigboxs[this.index]).css("display","block")
                 },function(){
                     $(miniImgs[this.index]).css("opacity","1");
                     $(bigImgs[this.index]).css("display","block");
-                    $(bigboxs[this.index]).css("display","block");
+                    $(bigboxs[this.index]).css("display","block")
                 })
             }
-
-
-
             //放大镜：
-           for(var i=0;i<bigImgs.length;i++){
-               $(bigImgs[i]).mouseenter(function(){
+                $("#bigImg").mouseenter(function(){
                     $(mark).add(bigbox).show()   
                 }).mouseleave(function(){
                     $(mark).add(bigbox).hide()   
                 }).mousemove(function(e){
-                   
-                    var l=e.clientX-$(this).offset().left+1;
-                    l=Math.max(0,l);
-                    l=Math.min(l,350);
-                  
-                    var t=e.clientY-$(this).offset().top+1;
-                    t=Math.max(0,t);
-                    t=Math.min(450,t);
+                    var l=e.clientX-$(this).offset().left-50;
+                        l=Math.max(0,l);
+                        l=Math.min(l,400);
+                    var t=e.clientY-$(this).offset().top-50;
+                        t=Math.max(0,t);
+                        t=Math.min(400,t);
                     $(mark).css({
                         left:l,
                         top:t
@@ -159,9 +141,6 @@ function big(node1,node2){
                         top:-2*t
                     })
                 })
-
-               
-            }
         },
         error:function(msg){
             console.log(msg);

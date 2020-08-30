@@ -4,7 +4,7 @@ define(["jquery","jquery-cookie"],function($){
     function signIn(node1,node2,node3){
         $.ajax({
             type:"post",
-            url:"../signIn.php",
+            url:"signIn.php",
             data:{
                 number:$(node1).val(),
                 password:$(node2).val()

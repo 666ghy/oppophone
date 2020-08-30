@@ -1,5 +1,5 @@
 require.config({
-    pashs:{
+    paths:{
         jquery:"jquery-1.11.3",
         "jquery-cookie":"jquery.cookie",
         signIn:"signIn"

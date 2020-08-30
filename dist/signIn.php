@@ -37,7 +37,7 @@ mysql_set_charset("utf8");
 //4.选择访问数据库：
 mysql_select_db("sinin");
 //5.密码加密处理：
-$str=md5(md5($password)."aidongdong")
+$str=md5(md5($password).'aidongdong');
 //6.准备sql，判断是否登陆成功：
 $sql="SELECT * FROM students WHERE number='{$number}' AND password='{$str}'";
 $res=mysql_query($sql);

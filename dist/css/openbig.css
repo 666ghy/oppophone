@@ -60,50 +60,46 @@ header {
 section {
   width: 1266px;
   height: 1500px;
-  margin: 0 auto;
   position: relative; }
   section #left1 {
     width: 816px;
     height: 1500px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0 auto; }
-    section #left1 .bigImg {
-      width: 450px;
-      height: 400px;
+    position: relative; }
+    section #left1 #bigImg {
+      border: 1px solid black;
+      width: 500px;
+      height: 500px;
       position: relative;
-      margin-bottom: 150px;
-      position: relative; }
-      section #left1 .bigImg #mark {
+      margin-bottom: 150px; }
+      section #left1 #bigImg #mark {
         width: 100px;
         height: 100px;
         opacity: 0.3;
         background-color: black;
         position: absolute;
+        z-index: 1;
         left: 0;
         top: 0;
-        z-index: 1;
         display: none; }
-      section #left1 .bigImg img {
+      section #left1 #bigImg img {
         display: block;
-        width: 500px;
-        height: 500px;
         position: absolute;
-        display: none; }
-      section #left1 .bigImg #bigbox {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        right: -260px;
-        top: 120px;
         display: none;
-        overflow: hidden; }
-        section #left1 .bigImg #bigbox img {
-          display: block;
-          width: 1000px;
-          height: 1000px;
-          position: absolute; }
+        width: 500px;
+        height: 500px; }
+    section #left1 #bigbox {
+      width: 200px;
+      height: 200px;
+      display: none;
+      position: absolute;
+      top: 200px;
+      right: 50px;
+      overflow: hidden; }
+      section #left1 #bigbox img {
+        display: block;
+        width: 1000px;
+        height: 1000px;
+        position: absolute; }
   section #right1 {
     width: 450px;
     height: 1500px;

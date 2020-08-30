@@ -1,0 +1,61 @@
+
+    [
+    {"id":0,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107045f0d24dc88fd7.png?x-oss-process=image/format,webp",
+        "name":"OPPO Watch",
+        "price":"￥1499"
+    },
+    
+    {"id":1,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107005f0d267cd7a09.png?x-oss-process=image/format,webp",
+        "name":"OPPO 手环时尚版",
+        "price":"￥249"
+    },
+    {"id":2,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107585f0d26b61be59.png?x-oss-process=image/format,webp",
+        "name":"OPPO 手环",
+        "price":"￥199"
+    },
+    {"id":3,
+        "image":"https://dsfs.oppo.com/archives/202006/202006050606415eda1f8504a14.png?x-oss-process=image/format,webp",
+        "name":"OPPO Enco W51",
+        "price":"￥499"
+    },
+    {"id":4,
+        "image":"https://dsfs.oppo.com/archives/202004/202004080804405e8dc5d095db6.png?x-oss-process=image/format,webp",
+        "name":"OPPO Enco W31",
+        "price":"￥299"
+    },
+    {"id":5,
+        "image":"https://dsfs.oppo.com/archives/202007/202007010507155efc594becc0a.png?x-oss-process=image/format,webp",
+        "name":"Enco Q1无线降噪耳机",
+        "price":"￥599"
+    },
+    {"id":6,
+        "image":"https://dsfs.oppo.com/archives/201912/201912020212385de4b38aebef3.png?x-oss-process=image/format,webp",
+        "name":"游戏手柄 C1",
+        "price":"￥279"
+    },
+    {"id":7,
+        "image":"https://dsfs.oppo.com/archives/201905/201905230205595ce640033bd16.png?x-oss-process=image/format,webp",
+        "name":"O-Fresh 立体声耳机",
+        "price":"￥129"
+    },
+    {"id":8,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107045f0d2a7ce4f0f.png?x-oss-process=image/format,webp",
+        "name":"65W超闪电源适配器",
+        "price":"￥199"
+    },
+    {"id":9,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107035f0d285f523a7.png?x-oss-process=image/format,webp",
+        "name":"30W闪冲套装",
+        "price":"￥129"
+    },
+    {"id":10,
+        "image":"https://dsfs.oppo.com/archives/202007/202007141107055f0d29511a93a.png?x-oss-process=image/format,webp",
+        "name":"18W 快充移动电源2",
+        "price":"￥99"
+    }
+
+]
+

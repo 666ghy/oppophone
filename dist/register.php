@@ -6,7 +6,7 @@ $number=$_POST["number"];
 $password=$_POST["password"];
 $createtime=$_POST["createtime"];
 //后台，进行一个简单的验证
-if(!$username){
+if(!$number){
     $responseData['code'] = 1;
     $responseData['msg'] = "用户名不能为空";
     echo json_encode($responseData);
